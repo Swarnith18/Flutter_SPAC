@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:spac/models/menview.dart';
+import 'package:spac/models/Menview.dart';
 
 // ignore: must_be_immutable
 class MenviewTile extends StatelessWidget {
@@ -32,9 +30,9 @@ class MenviewTile extends StatelessWidget {
            ),
            
              Padding(
-               padding: const EdgeInsets.only(left: 15.0),
+               padding: const EdgeInsets.only(bottom: 25.0),
                child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
                
                  children: [
                   Text(
@@ -45,7 +43,7 @@ class MenviewTile extends StatelessWidget {
                   fontSize: 20),
                   ),
                
-                   GestureDetector(
+                   /*GestureDetector(
                     onTap: onTap,
                      child: Container(
                       padding: const EdgeInsets.all(20),
@@ -60,13 +58,13 @@ class MenviewTile extends StatelessWidget {
                         Icons.add,
                         color: Colors.white,)
                       ),
-                   ),
+                   ),*/
                  ],
                ),
              ),
 
         ],
-        )
-    );
-  }
+      )
+);
+}
 }
